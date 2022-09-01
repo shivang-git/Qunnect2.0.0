@@ -3,7 +3,10 @@ body {
     padding: 0%;
 }
 
-
+#logout{
+    text-decoration: none;
+    color: black;
+}
 
 .h3{
     margin-top: 15px;
