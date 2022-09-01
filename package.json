@@ -1,0 +1,32 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config src/server.js ",
+    "start": "node -r dotenv/config src/server.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "nodemon": "^2.0.19",
+    "passport": "^0.5.2",
+    "passport-facebook": "^3.0.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7",
+    "socket.io": "^4.4.1"
+  },
+  "description": ""
+}
