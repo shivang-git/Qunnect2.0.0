@@ -15,7 +15,7 @@ const io = socketio(server)
 const{contacts,joinUser,removeUser,getUser}=require('../utils/users')
 
 const mongoose = require('mongoose')
-const port = 8000;
+const port = process.env.PORT || 8000
 
 
 const database_link = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.29gsz.mongodb.net/Qunnect?retryWrites=true&w=majority`
