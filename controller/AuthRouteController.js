@@ -57,7 +57,7 @@ async function login_info(req, res) {
         if (!passmatch) {
                 return res.status(400).send("invalid credentials"); 
         }
-            let token = jwt.sign({ id: user.id }, process.env.SECRET_KEY, { expiresIn: '10s' })
+            let token = jwt.sign({ id: user.id }, process.env.SECRET_KEY, { expiresIn: '1day' })
             
             res.cookie('_loggedin', token, { httpOnly: true })
             res.redirect('/')
