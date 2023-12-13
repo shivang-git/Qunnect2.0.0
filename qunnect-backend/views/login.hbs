@@ -1,0 +1,101 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Qunnect - Login</title>
+    <meta name="description" content="#" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {{! fontawesome }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/dist/css/lib/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <!-- Swipe core CSS -->
+    <link href="/vendor/dist/css/swipe.min.css" type="text/css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link href="/vendor/dist/img/favicon.png" type="image/png" rel="icon" />
+</head>
+
+<body class="start">
+    <main>
+        <div class="layout">
+            <!-- Start of Sign In -->
+            <div class="main order-md-1">
+                <div class="start">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <div class="content">
+                                <h1>LogIn to Qunnect</h1>
+                                <div class="third-party" style="gap:5%;">
+                                    <form action="/account/google" method="get" style="display: contents;">
+                                        <button class="btn item bg-blue">
+                                            <i class="fa-brands fa-google"></i>
+                                        </button>
+                                    </form>
+                                    <form action="/account/facebook" method="get" style="display: contents;">
+                                        <button class="btn item bg-teal">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </button>
+                                    </form>
+
+                                </div>
+                                <p>or use your email account:</p>
+                                <form method="post" action="/account/login" enctype="application/x-www-form-urlencoded">
+                                    <div class="form-group">
+                                        <input type="email" name="email" id="inputEmail" class="form-control"
+                                            placeholder="Email Address" required />
+                                        <button class="btn icon" disabled="true"><i
+                                                class="material-icons">mail_outline</i></button>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" name="password" id="inputPassword" class="form-control"
+                                            placeholder="Password" required />
+                                        <button class="btn icon" disabled="true"><i
+                                                class="material-icons">lock_outline</i></button>
+                                    </div>
+                                    <button type="submit" class="btn button">Log In</button>
+                                    <div class="callout">
+                                        <span>Don't have account?
+                                            <a href="/account/sign-up">Create Account</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Sign In -->
+            <!-- Start of Sidebar -->
+            <div class="aside order-md-2">
+                <div class="container">
+                    <div class="col-md-12">
+                        <div class="preference">
+                            <h2>Hello, Friend!</h2>
+                            <p>Enter your personal details and start your journey with
+                                Qunnect today.</p>
+                            <a href="/account/sign-up" class="btn button">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Sidebar -->
+        </div>
+        <!-- Layout -->
+    </main>
+
+    <!-- Bootstrap core JavaScript
+		================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/vendor/dist/js/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script
+      src = "/vendor/dist/js/vendor/jquery-slim.min.js" ><\/script>')
+    </script>
+    <script src="public/vendor/dist/js/vendor/popper.min.js"></script>
+    <script src="public/vendor/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
